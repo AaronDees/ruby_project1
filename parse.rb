@@ -1,8 +1,8 @@
 require 'open-uri'
 download = open('http://physis.arch.tamu.edu/files/http_access_log')
-#IO.copy_stream(download, 'log')
+IO.copy_stream(download, 'log')
 
-#Dir.mkdir('monthly logs') unless File.exists?('monthly logs')
+Dir.mkdir('monthly logs') unless File.exists?('monthly logs')
 #File.open('monthly logs/' + 'October 1994.txt', 'w+')
 
 #string parse and string format strptime(string, pattern) strftime(pattern)
